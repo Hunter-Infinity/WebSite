@@ -5,6 +5,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const mobileMenuToggle = document.getElementById('mobile-menu');
     const navMenu = document.querySelector('.nav-menu');
     const themeToggle = document.getElementById('theme-toggle');
+    const isLightMode = localStorage.getItem('isLightMode');
+
+    if (isLightMode === 'true') {
+        document.body.classList.add('light-mode');
+    }
 
     mobileMenuToggle.addEventListener('click', function () {
         navMenu.classList.toggle('show');
@@ -12,5 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     themeToggle.addEventListener('click', function () {
         document.body.classList.toggle('light-mode');
+        const isLightMode = document.body.classList.contains('light-mode');
+        localStorage.setItem('isLightMode', isLightMode);
     });
 });
