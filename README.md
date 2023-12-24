@@ -1,1 +1,1 @@
-# Start developing the Hunter Infinity Website from this repo
+# Devy is working on this now!
