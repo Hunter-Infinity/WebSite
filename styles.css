@@ -5,6 +5,14 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #111;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.light-mode {
+    background-color: #fff;
+    color: #111;
 }
 
 header {
@@ -13,7 +21,6 @@ header {
     align-items: center;
     padding: 15px;
     background-color: #333;
-    color: #fff;
 }
 
 .logo {
