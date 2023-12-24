@@ -1,4 +1,4 @@
-/* Hello! */
+/* Hello */
 
 body {
     font-family: 'Arial', sans-serif;
@@ -25,12 +25,14 @@ header {
 
 .logo {
     font-size: 1.5em;
+    color: #fff;
 }
 
 .menu-toggle {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    color: #fff
 }
 
 .menu-toggle span {
