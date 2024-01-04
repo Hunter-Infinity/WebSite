@@ -204,7 +204,21 @@
 				});
 
 				editor = monaco.editor.create(document.getElementById('container'), {
-					value: '',
+					value: [
+						"--[[ Welcome To Hunter Infinity V1!",
+						"",
+						"    Hunter infinity Was Intended To be A Powerful multi-Purpose App",
+                        "     But Ended Up As The Best Executor With the Original Intentions For the Side",
+						"     We Provide Level 7 Execution power And Almost Every lua Function you",
+						"     Can think off While Doing That Smoothly And Quietly,
+						"",
+						"     For Additional Help, You Can Join The Discord Server At",
+						"     'dsc.gg/hunterzexecutor'!",
+						"",
+						"     Our Official Website Is 'https://hunterinfinity.netlify.app'",
+						"Enjoy Your Time Exploring Hunter Infinity's First Release! ]]",
+						"",
+					].join('\n'),
 					language: 'lua',
 					theme: "Dark",
 					fontSize: "14px",
@@ -213,7 +227,10 @@
 					dragAndDrop: true,
 					links: false,
 					minimap: {
-						enabled: true,
+						enabled: false,
+					},
+					scrollbar: {
+						verticalHasArrows: false,
 					},
 					showFoldingControls: "always",
 					smoothScrolling: true,
